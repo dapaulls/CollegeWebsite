@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="CollegeWebsite.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title>City College</title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />    
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>    
+</head>
+<body>
+    
+    <form id="form1" runat="server">
+    <table align="center" width="800px">
+        <tr>
+            <td>
+                <asp:Image ID="CityCollegeLogo" runat="server" 
+                    AlternateText="City College Logo" ImageUrl="~/Images/Logo.png" />
+            </td>
+            <td>
+                <h1 align="center">City College</h1>
+            </td>
+            <td align="right">
+                <asp:LoginStatus ID="MasterLoginStatus" runat="server" />
+            </td>
+        </tr>
+        <tr>
+            <td align="left" valign="top">
+                <asp:TreeView ID="TreeView1" runat="server" 
+                    DataSourceID="CityCollegeSiteMapDataSource" ImageSet="BulletedList2" 
+                    ShowExpandCollapse="False">
+                    <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+                    <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" 
+                        HorizontalPadding="0px" NodeSpacing="0px" VerticalPadding="0px" />
+                    <ParentNodeStyle Font-Bold="False" />
+                    <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" 
+                        HorizontalPadding="0px" VerticalPadding="0px" />
+                </asp:TreeView>
+                <asp:SiteMapDataSource ID="CityCollegeSiteMapDataSource" runat="server" />
+            </td>
+            <td valign="top">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+            <td valign="top">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td style="font-size: xx-small">
+                &copy 2015 City College</td>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+    </table>
+    </form>
+    
+</body>
+</html>

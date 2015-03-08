@@ -1,0 +1,5 @@
+c:\users\david\documents\visual studio 2010\Projects\CollegeWebsite\CollegeWebsite\bin\CollegeWebsite.dll
+c:\users\david\documents\visual studio 2010\Projects\CollegeWebsite\CollegeWebsite\bin\CollegeWebsite.pdb
+c:\users\david\documents\visual studio 2010\Projects\CollegeWebsite\CollegeWebsite\obj\Debug\CollegeWebsite.dll
+c:\users\david\documents\visual studio 2010\Projects\CollegeWebsite\CollegeWebsite\obj\Debug\CollegeWebsite.pdb
+C:\Users\David\documents\visual studio 2010\Projects\CollegeWebsite\CollegeWebsite\obj\Debug\CollegeWebsite.csprojResolveAssemblyReference.cache

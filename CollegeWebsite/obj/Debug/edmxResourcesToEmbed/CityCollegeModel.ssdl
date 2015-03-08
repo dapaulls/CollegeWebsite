@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ASPNETDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ASPNETDBModelStoreContainer">
+    <EntitySet Name="CourseList" EntityType="ASPNETDBModel.Store.CourseList" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EnrolList" EntityType="ASPNETDBModel.Store.EnrolList" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="WebsiteUploads" EntityType="ASPNETDBModel.Store.WebsiteUploads" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="CourseList">
+    <Key>
+      <PropertyRef Name="CourseID" />
+    </Key>
+    <Property Name="CourseID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CourseName" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="CourseStartDate" Type="smalldatetime" />
+    <Property Name="CourseEndDate" Type="smalldatetime" />
+    <Property Name="CourseDescription" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="EnrolList">
+    <Key>
+      <PropertyRef Name="EnrolID" />
+    </Key>
+    <Property Name="EnrolID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="LastName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CourseName" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="EnquiryDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="WebsiteUploads">
+    <Key>
+      <PropertyRef Name="MaterialID" />
+    </Key>
+    <Property Name="MaterialID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="File" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+</Schema>
