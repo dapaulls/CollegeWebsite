@@ -14,7 +14,7 @@
                 <asp:TextBox ID="FirstNameTextBox" runat="server" MaxLength="50"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="FirstNameRequiredFieldValidator" runat="server" 
                     ControlToValidate="FirstNameTextBox" Display="Dynamic" 
-                    ErrorMessage="* Enter your first name." ForeColor="Red">* Enter your first name.</asp:RequiredFieldValidator>
+                    ErrorMessage="* Enter your first name." CssClass="message">* Enter your first name.</asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
@@ -25,7 +25,7 @@
                 <asp:TextBox ID="LastNameTextBox" runat="server" MaxLength="50"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="LastNameRequiredFieldValidator" runat="server" 
                     ControlToValidate="LastNameTextBox" Display="Dynamic" 
-                    ErrorMessage="* Enter your last name." ForeColor="Red">* Enter your last name.</asp:RequiredFieldValidator>
+                    ErrorMessage="* Enter your last name." CssClass="message">* Enter your last name.</asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
@@ -36,11 +36,12 @@
                 <asp:TextBox ID="EmailTextBox" runat="server" MaxLength="100"></asp:TextBox>
                 <asp:RegularExpressionValidator ID="EmailRegularExpressionValidator" 
                     runat="server" ControlToValidate="EmailTextBox" Display="Dynamic" 
-                    ErrorMessage="* Enter a valis e-mail address." ForeColor="Red" 
-                    ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">* Enter a valid e-mail address.</asp:RegularExpressionValidator>
+                    ErrorMessage="* Enter a valis e-mail address." 
+                    ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" 
+                    CssClass="message">* Enter a valid e-mail address.</asp:RegularExpressionValidator>
                 <asp:RequiredFieldValidator ID="EmailRequiredFieldValidator" runat="server" 
                     ControlToValidate="EmailTextBox" Display="Dynamic" 
-                    ErrorMessage="RequiredFieldValidator" ForeColor="Red">* Enter your e-mail address.</asp:RequiredFieldValidator>
+                    ErrorMessage="RequiredFieldValidator" CssClass="message">* Enter your e-mail address.</asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
@@ -69,8 +70,7 @@
             <td>
                 &nbsp;</td>
             <td>
-                <asp:Label ID="EnrolSuccessfulLabel" runat="server" CssClass="message" 
-                    ForeColor="Red"></asp:Label>
+                <asp:Label ID="EnrolSuccessfulLabel" runat="server" CssClass="message"></asp:Label>
             </td>
         </tr>
     </table>

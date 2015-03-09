@@ -15,7 +15,7 @@ that you want to upload, and then click the &#39;Upload&#39; button.</p>
                 <asp:TextBox ID="TitleTextBox" runat="server" MaxLength="100"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="TitleRequiredFieldValidator" runat="server" 
                     ControlToValidate="TitleTextBox" ErrorMessage="* Enter a title" 
-                    ForeColor="Red">* Enter a title</asp:RequiredFieldValidator>
+                    CssClass="message">* Enter a title</asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
@@ -52,7 +52,7 @@ that you want to upload, and then click the &#39;Upload&#39; button.</p>
             <td>
                 &nbsp;</td>
             <td>
-                <asp:Label ID="UploadSuccessfulLabel" runat="server" ForeColor="Red"></asp:Label>                
+                <asp:Label ID="UploadSuccessfulLabel" runat="server" CssClass="message"></asp:Label>                
             </td>
         </tr>
     </table>

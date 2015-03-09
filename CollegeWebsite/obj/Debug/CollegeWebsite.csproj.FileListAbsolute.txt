@@ -3,3 +3,8 @@ c:\users\david\documents\visual studio 2010\Projects\CollegeWebsite\CollegeWebsi
 c:\users\david\documents\visual studio 2010\Projects\CollegeWebsite\CollegeWebsite\obj\Debug\CollegeWebsite.dll
 c:\users\david\documents\visual studio 2010\Projects\CollegeWebsite\CollegeWebsite\obj\Debug\CollegeWebsite.pdb
 C:\Users\David\documents\visual studio 2010\Projects\CollegeWebsite\CollegeWebsite\obj\Debug\CollegeWebsite.csprojResolveAssemblyReference.cache
+C:\Users\David\Documents\GitHub\CollegeWebsite\CollegeWebsite\bin\CollegeWebsite.dll
+C:\Users\David\Documents\GitHub\CollegeWebsite\CollegeWebsite\bin\CollegeWebsite.pdb
+C:\Users\David\Documents\GitHub\CollegeWebsite\CollegeWebsite\obj\Debug\CollegeWebsite.csprojResolveAssemblyReference.cache
+C:\Users\David\Documents\GitHub\CollegeWebsite\CollegeWebsite\obj\Debug\CollegeWebsite.dll
+C:\Users\David\Documents\GitHub\CollegeWebsite\CollegeWebsite\obj\Debug\CollegeWebsite.pdb
