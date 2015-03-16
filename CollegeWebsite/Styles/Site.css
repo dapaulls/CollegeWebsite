@@ -10,7 +10,8 @@ body
     margin-left: auto;
     margin-right: auto;
     padding: 0px;
-    color: #696969;    
+    color: #696969;
+    vertical-align: top;
 }
 
 .message
@@ -18,9 +19,12 @@ body
     color: Red;
 }
 
+/*
+
 a:link, a:visited
 {
     color: #034af3;
+    text-align: right;
 }
 
 a:hover

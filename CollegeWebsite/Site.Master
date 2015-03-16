@@ -4,28 +4,28 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head runat="server">
     <title>City College</title>
-    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />    
+    <link href="~/Styles/CityCollegeStyleSheet.css" rel="stylesheet" type="text/css" />    
     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
     </asp:ContentPlaceHolder>    
 </head>
 <body>
     
     <form id="form1" runat="server">
-    <table align="center" width="800px">
-        <tr>
-            <td>
+    <table>
+        <tr id="header">
+            <td id="logo">
                 <asp:Image ID="CityCollegeLogo" runat="server" 
                     AlternateText="City College Logo" ImageUrl="~/Images/Logo.png" />
             </td>
-            <td>
-                <h1 align="center">City College</h1>
+            <td id="title">
+                <h1>City College</h1>
             </td>
-            <td align="right">
+            <td id="login">
                 <asp:LoginStatus ID="MasterLoginStatus" runat="server" />
             </td>
         </tr>
-        <tr>
-            <td align="left" valign="top">
+        <tr id="middleRow">
+            <td id="menu">
                 <asp:TreeView ID="TreeView1" runat="server" 
                     DataSourceID="CityCollegeSiteMapDataSource" ImageSet="BulletedList2" 
                     ShowExpandCollapse="False">
@@ -38,20 +38,31 @@
                 </asp:TreeView>
                 <asp:SiteMapDataSource ID="CityCollegeSiteMapDataSource" runat="server" />
             </td>
-            <td valign="top">
+            <td>
                 <asp:ContentPlaceHolder ID="MainContent" runat="server">
                 </asp:ContentPlaceHolder>
             </td>
-            <td valign="top">
-                &nbsp;</td>
+            <td>
+                <asp:ScriptManager ID="ScriptManager1" runat="server">
+                </asp:ScriptManager>
+                <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                    <ContentTemplate>
+                        <asp:Timer ID="Timer1" runat="server" Interval="5000" ontick="Timer1_Tick">
+                        </asp:Timer>
+                        <asp:Label ID="Label1" runat="server"></asp:Label>                        
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </td>
         </tr>
-        <tr>
-            <td style="font-size: xx-small">
+        <tr id="footer">
+            <td>
                 &copy 2015 City College</td>
             <td>
-                &nbsp;</td>
+                &nbsp;
+            </td>
             <td>
-                &nbsp;</td>
+                &nbsp;
+            </td>
         </tr>
     </table>
     </form>

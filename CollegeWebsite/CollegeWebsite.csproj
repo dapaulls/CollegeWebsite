@@ -63,6 +63,7 @@
     <Content Include="Enrol.aspx" />
     <Content Include="Images\Logo.png" />
     <Content Include="StudentsOnly\Download.aspx" />
+    <Content Include="Styles\CityCollegeStyleSheet.css" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
