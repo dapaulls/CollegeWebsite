@@ -24,5 +24,4 @@
                 HeaderText="End Date" SortExpression="CourseEndDate" />
         </Columns>
     </asp:GridView>
-&nbsp;
 </asp:Content>

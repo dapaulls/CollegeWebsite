@@ -5,7 +5,7 @@
     <p>To register your interest in a course, enter your name, e-mail address and name of the course using the form below. 
     One of our team will contact you within 48 hours.
     </p>
-    <table class="style1">
+    <table>
         <tr>
             <td>
                 <asp:Label ID="FirstNameLabel" runat="server" Text="First Name:"></asp:Label>
@@ -36,7 +36,7 @@
                 <asp:TextBox ID="EmailTextBox" runat="server" MaxLength="100"></asp:TextBox>
                 <asp:RegularExpressionValidator ID="EmailRegularExpressionValidator" 
                     runat="server" ControlToValidate="EmailTextBox" Display="Dynamic" 
-                    ErrorMessage="* Enter a valis e-mail address." 
+                    ErrorMessage="* Enter a valid e-mail address." 
                     ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" 
                     CssClass="message">* Enter a valid e-mail address.</asp:RegularExpressionValidator>
                 <asp:RequiredFieldValidator ID="EmailRequiredFieldValidator" runat="server" 
