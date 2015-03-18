@@ -61,7 +61,10 @@
     <Content Include="AdminOnly\Upload.aspx" />
     <Content Include="Browse.aspx" />
     <Content Include="Enrol.aspx" />
+    <Content Include="Images\Ad2.jpg" />
+    <Content Include="Images\Ad1.jpg" />
     <Content Include="Images\Logo.png" />
+    <Content Include="Images\Ad3.jpg" />
     <Content Include="StudentsOnly\Download.aspx" />
     <Content Include="Styles\CityCollegeStyleSheet.css" />
     <Content Include="Styles\Site.css" />

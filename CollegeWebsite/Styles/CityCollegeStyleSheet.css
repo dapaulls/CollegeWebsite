@@ -32,6 +32,11 @@
     vertical-align: top;
 }
 
+#advert
+{
+    width: 100px;
+}
+
 #footer
 {
     font-size: xx-small;
